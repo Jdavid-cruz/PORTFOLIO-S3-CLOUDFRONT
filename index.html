@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan David Ávila | Solutions Architect</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">JDÁ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">Quién soy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Columna izquierda - Foto -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="profile-container">
+            <img src="perfil.jpg" alt="Juan David Ávila" class="profile-pic">
+            <div class="tech-logos d-flex justify-content-center gap-2 mt-3">
+              <img src="aws.svg" alt="AWS" class="tech-logo">
+              <img src="terraform.svg" alt="Terraform" class="tech-logo">
+              <img src="docker.svg" alt="Docker" class="tech-logo">
+              <img src="kubernets.svg" alt="kubernets" class="tech-logo">
+            </div>
+          </div>
+        </div>
+        
+  
+        <!-- Columna derecha - Información -->
+        <div class="col-lg-7">
+          <div class="hero-content">
+            <h1>Juan David Ávila</h1>
+            <h2>Solutions Architect | AWS Cloud</h2>
+  
+            <div class="about-me">
+              <p>
+                Diseño e implemento arquitecturas cloud funcionales sobre AWS. He desarrollado proyectos completos aplicando buenas prácticas de redes, seguridad, escalabilidad y automatización.
+              </p>
+  
+              
+              <ul class="ps-0 ps-md-4">
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Arquitectura de redes en AWS: <strong>VPC personalizadas</strong>, <strong>subnets públicas y privadas</strong>, <strong>NAT Gateway</strong>, <strong>Internet Gateway</strong>, <strong>security groups</strong>, <strong>subnet groups</strong> para RDS, y <strong>acceso remoto mediante claves públicas SSH</strong> o herramientas como <strong>PuTTY</strong>.
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Infraestructura escalable con <strong>EC2</strong> para la capa de aplicación y <strong>RDS PostgreSQL</strong> como base de datos relacional gestionada.
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Hosting de sitios estáticos con <strong>S3</strong>, <strong>CloudFront</strong> y <strong>Route 53</strong> con dominio personalizado</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Aplicaciones serverless usando <strong>Lambda</strong>, <strong>API Gateway</strong>, <strong>DynamoDB</strong> y almacenamiento en <strong>S3</strong></li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Automatización completa con <strong>Terraform</strong>
+              </ul>
+              
+
+                </ul>
+                
+              
+            </div>
+  
+            <!-- ✅ Botones correctamente dentro del hero-content -->
+            <div class="hero-buttons mt-4">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-project-diagram"></i> Ver Proyectos
+              </a>
+              <a href="video.html" class="btn btn-outline">
+                <i class="fas fa-play-circle"></i> Video Presentación
+              </a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <p>Proyectos reales y prácticos sobre la nube de AWS</p>
+    </div>
+    
+    <div class="projects-grid">
+      
+      <!-- Proyecto 1: EC2 + Bastion Host + RDS + Terraform -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>EC2 + Bastion Host + RDS + Terraform</h3>
+          <p>Infraestructura clásica con acceso seguro a través de Bastion Host, servidor web en EC2 y base de datos en RDS. Todo desplegado con infraestructura como código (IaC) utilizando Terraform.</p>
+          <div class="project-tech">
+            <span>EC2</span>
+            <span>Bastion Host</span>
+            <span>RDS</span>
+            <span>Terraform</span>
+          </div>
+        </div>
+        <a href="proyecto1.html" class="project-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Proyecto 2: Lambda + API Gateway + S3 + Terraform -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Lambda + S3 + API Gateway + IAM + Terraform</h3>
+          <p>Flujo de registro de usuarios serverless: frontend en S3, distribución global con CloudFront, backend en Lambda, y exposición segura con API Gateway. Todo automatizado con Terraform.</p>
+          <div class="project-tech">
+            <span>Lambda</span>
+            <span>S3</span>
+            <span>CloudFront</span>
+            <span>API Gateway</span>
+          </div>
+        </div>
+        <a href="proyecto2.html" class="project-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Proyecto 3: Docker + EC2 + ALB + Auto Scaling + CloudWatch -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>Docker + EC2 + RDS + Bastion Host + Terraform</h3>
+          <p>Aplicación web desplegada en contenedores Docker sobre EC2, con balanceo de carga (ALB), escalado automático y monitoreo con CloudWatch. Infraestructura gestionada con Terraform.</p>
+          <div class="project-tech">
+            <span>Docker</span>
+            <span>EC2</span>
+            <span>ALB</span>
+            <span>Auto Scaling</span>
+          </div>
+        </div>
+        <a href="proyecto3.html" class="project-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Proyecto 4: S3 + CloudFront + WAF + Route 53 -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>S3 + CloudFront + WAF + Route 53 + Terraform</h3>
+          <p>Hosting estático profesional con medidas de seguridad avanzadas: distribución global con CloudFront, protección con WAF y dominio personalizado gestionado en Route 53.</p>
+          <div class="project-tech">
+            <span>S3</span>
+            <span>CloudFront</span>
+            <span>WAF</span>
+            <span>Route 53</span>
+          </div>
+        </div>
+        <a href="proyecto4.html" class="project-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+
+<!-- Proyecto 4: Infraestructura Tradicional con Terraform -->
+<div class="project-card">
+  <div class="project-content">
+    <div class="project-icon">
+      <i class="fas fa-sitemap"></i>
+    </div>
+    <h3>Infraestructura Tradicional con Terraform</h3>
+    <p>Video explicativo donde desarrollo una infraestructura en AWS usando Terraform, ideal para desplegar aplicaciones web en un entorno real.</p>
+    <div class="project-tech">
+      <span>Terraform</span>
+      <span>VPC</span>
+      <span>Subnets</span>
+      <span>EC2</span>
+      <span>NAT Gateway</span>
+    </div>
+  </div>
+  <a href="proyecto5.html" class="project-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+</div>
+
+
+
+<div class="project-card">
+  <div class="project-content">
+    <div class="project-icon">
+      <i class="fas fa-cubes"></i>
+    </div>
+    <h3>Docker + ECS + EKS (Work in progress) </h3>
+    <p>Arquitectura moderna basada en contenedores para gestionar módulos independientes de una app de registro, imágenes y comentarios. Desplegada con ECS y orquestada con EKS.</p>
+    <div class="project-tech">
+      <span>Docker</span>
+      <span>ECS</span>
+      <span>EKS</span>
+    </div>
+  </div>
+  <a href="#" class="project-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+  
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Columna izquierda - Información -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="contact-info">
+            <h2>  Información de Contacto </h2>
+            <p class="lead">
+                <p class="lead">
+                    Estoy abierto a propuestas donde se valore la claridad técnica, el compromiso y la capacidad de diseñar soluciones bien estructuradas y funcionales en AWS.
+                </p>
+                    
+            </p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:juanrobertojhon899@gmail.com">awsjuandavid@gmail.com</a>
+                </div>
+              </div>
+  
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Teléfono</h4>
+                  <a href="tel:+34644888401">+34 644 888 401</a>
+                </div>
+              </div>
+  
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Ubicación</h4>
+                  <span>Madrid, España · Disponible en remoto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Columna derecha - Imagen -->
+        <div class="col-lg-6">
+          <div class="contact-image">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Profesionales colaborando">
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-handshake"></i>
+                <h3>Hablemos de arquitectura en AWS.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Columna izquierda -->
+      <div class="col-lg-8">
+        <div class="footer-content">
+          <h3>¿Conectamos?</h3>
+          <p>Podemos conectar por LinkedIn y aquí también tienes acceso directo a mi GitHub.</p>
+          
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/juan-david-%C3%A1vila-61943a176/" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn" width="40" height="40" style="border-radius: 50%; box-shadow: 0 3px 6px rgba(0,0,0,0.15);">
+            </a>
+            <a href="https://github.com/Jdavid-cruz" target="_blank">
+              <img src="github.png" alt="GitHub" width="40" height="40" style="border-radius: 50%; box-shadow: 0 3px 6px rgba(0,0,0,0.15);">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Columna derecha -->
+      <div class="col-lg-4">
+        <div class="footer-message">
+          <i class="fas fa-quote-left"></i>
+          <p>Gracias por visitar mi portafolio. Estaré encantado de responder cualquier consulta o propuesta relacionada con cloud y AWS.</p>
+          <div class="signature">
+            <span>Juan David Ávila</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Juan David Ávila. Gracias por llegar hasta aquí.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Actualiza automáticamente el año del footer
+        document.addEventListener('DOMContentLoaded', () => {
+          const yearSpan = document.getElementById('year');
+          if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+          }
+      
+          // Inicializa animaciones suaves de scroll
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', e => {
+              e.preventDefault();
+              const target = document.querySelector(anchor.getAttribute('href'));
+              if (target) {
+                window.scrollTo({
+                  top: target.offsetTop - 80,
+                  behavior: 'smooth'
+                });
+              }
+            });
+          });
+      
+          // Preparar elementos para animación al hacer scroll
+          const animatedElements = document.querySelectorAll('.project-card, .contact-item, .footer-content, .footer-message');
+          animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+          });
+      
+          // Ejecutar animación cuando aparecen en pantalla
+          function animateOnScroll() {
+            animatedElements.forEach(el => {
+              const rect = el.getBoundingClientRect();
+              if (rect.top < window.innerHeight - 100) {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+              }
+            });
+          }
+      
+          animateOnScroll();
+          window.addEventListener('scroll', animateOnScroll);
+      
+          // Estilo al hacer scroll (navbar)
+          const navbar = document.querySelector('.navbar');
+          if (navbar) {
+            window.addEventListener('scroll', () => {
+              navbar.classList.toggle('scrolled', window.scrollY > 50);
+            });
+          }
+      
+          // Hover animado en imagen de contacto
+          const contactImage = document.querySelector('.contact-image');
+          if (contactImage) {
+            const overlay = contactImage.querySelector('.image-overlay');
+            const img = contactImage.querySelector('img');
+      
+            contactImage.addEventListener('mouseenter', () => {
+              if (overlay) overlay.style.opacity = '1';
+              if (img) img.style.transform = 'scale(1.05)';
+            });
+      
+            contactImage.addEventListener('mouseleave', () => {
+              if (overlay) overlay.style.opacity = '0';
+              if (img) img.style.transform = 'scale(1)';
+            });
+          }
+      
+          // Hover animado en logos de tecnologías
+          document.querySelectorAll('.tech-logo').forEach(logo => {
+            logo.style.transition = 'all 0.3s ease';
+      
+            logo.addEventListener('mouseenter', () => {
+              logo.style.transform = 'translateY(-5px)';
+              logo.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+            });
+      
+            logo.addEventListener('mouseleave', () => {
+              logo.style.transform = 'translateY(0)';
+              logo.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+            });
+          });
+        });
+      </script>
+      
+</body>
+</html>
